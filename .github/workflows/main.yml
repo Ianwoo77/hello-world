@@ -20,7 +20,7 @@ jobs:
               
               # changes the base-tag in index.html from '/' to 'BlazorApp1' to match GitHub Pages repository subdirectory
             - name: Change base-tag in index.html from / to BlazorApp1
-              run: sed -i 's/<base href="\/" \/>/<base href="\/Blazor\/" \/>/g' release/wwwroot/index.html
+              run: sed -i 's/<base href="\/" \/>/<base href="\/hello-world\/" \/>/g' release/wwwroot/index.html
              
             - name: copy index.html to 404.html
               run: cp release/wwwroot/index.html release/wwwroot/404.html
